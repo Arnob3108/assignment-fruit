@@ -32,19 +32,19 @@
 
 </head>
 <body>
-    <header class=" w-[95%] 2xl:w-[80%] mx-auto">
+    <header class=" w-[95%] 2xl:mx-auto 2xl:w-[80%] mx-auto">
         <nav class="navbar bg-[#F85559] justify-between rounded-full my-10 shadow-2xl">
             <div class="navbar-center">
               <div class="dropdown">
                 <label tabindex="0" class="btn btn-ghost lg:hidden">
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                 </label>
-                <ul tabindex="0" class="menu menu-sm text-white dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Shop</a></li>
-                    <li><a href="">All Fruits</a></li>
-                    <div class=" lg:hidden ">
+                <ul tabindex="0" class="menu menu-sm text-black font-bold dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#shop">All Fruits</a></li>
+                    <div class=" lg:hidden font-normal">
                         <div class="form-control ">
                             <div class="input-group rounded-full">
                               <input type="text" placeholder="Search…" class="input bg-white input-bordered w-[70%]" />
@@ -60,10 +60,10 @@
             
             <div class="navbar-start hidden lg:flex">
               <ul class="menu text-white font-bold menu-horizontal px-1">
-                <li><a href="">Home</a></li>
-                <li><a href="">About Us</a></li>
-                <li><a href="">Shop</a></li>
-                <li><a href="">All Fruits</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#shop">All Fruits</a></li>
               </ul>
             </div>
             <div class="navbar-center">
@@ -86,7 +86,7 @@
     </header>
     <main>
         <!-- Banner -->
-        <section class="w-[100%] 2xl:w-[80%] mx-auto px-8 md:px-18 py-5 my-10 relative">
+        <section id="home" class="w-[100%] 2xl:w-[80%] mx-auto px-8 md:px-18 py-5 my-10 relative">
             <div class="carousel w-full relative">
 
                   <div id="slide1" class="carousel-item relative w-full">
@@ -221,8 +221,8 @@
             </div>
       </section>
       <!-- count and card section -->
-      <section class="w-[95%] 2xl:w-[80%] mx-auto px-8 md:px-18 py-5 my-10">
-        <div class="flex flex-col lg:flex-row justify-between mt-11 ">
+      <section id="shop" class="w-[95%] 2xl:w-[80%] mx-auto px-8 md:px-18 py-5 my-10">
+        <div class="flex flex-col lg:flex-row justify-between my-11 ">
               <!-- date container -->
               <div class=" text-center md:text-start lg:text-start pb-5">
                     <h2 class="text-lg md:text-3xl lg:text-4xl font-extrabold pb-6 ">Deal of the day</h2>
@@ -451,7 +451,7 @@
         </dialog>
   </section>
   <!-- Meet the team section -->
-  <section class="w-[95%] 2xl:w-[80%] mx-auto px-8 md:px-18 py-5 my-10 rounded-2xl">
+  <section id="about" class="w-[95%] 2xl:w-[80%] mx-auto px-8 md:px-18 py-5 my-10 rounded-2xl">
     <div class="hero rounded-2xl " style="background-image: url(./images//team.png);">
           <div class="hero-overlay bg-opacity-60 rounded-2xl">
                 <div class=" py-16 text-center  text-white ">
@@ -526,11 +526,11 @@
           <p class="">Contrary to popular belief, is not simply random text. It has roots in a piece of
                 classical Latin <br> literature from 45 BC, making it over 2000 years old.</p>
           <!-- why chosse Us container       -->
-          <div class="pt-10 flex flex-col lg:flex-row gap-10">
+          <div class="pt-10 flex justify-center flex-col lg:flex-row gap-10">
                 <div class="space-y-10 flex-1">
                       <div class="flex gap-4 items-center text-start">
 
-                            <div>
+                            <div class=" 2xl:flex">
                                   <img class="bg-[#e7e7e7] p-2 rounded-full" src="./icone//fruit 1.png"
                                         alt="">
                             </div>
@@ -543,7 +543,7 @@
                       </div>
                       <div class="flex gap-4  items-center text-start">
 
-                            <div>
+                            <div class=" 2xl:flex">
                                   <img class="bg-[#e7e7e7] p-2 rounded-full" src="./icone//fruit 1.png"
                                         alt="">
                             </div>
@@ -556,7 +556,7 @@
                       </div>
                       <div class="flex gap-4  items-center text-start">
 
-                            <div>
+                            <div class=" 2xl:flex">
                                   <img class="bg-[#e7e7e7] p-2 rounded-full" src="./icone//fruit 1.png"
                                         alt="">
                             </div>
@@ -571,40 +571,40 @@
                 <div class="">
                       <img class="w-[350px] m-auto shadow-2xl" src="./images//whychoose1.png" alt="">
                 </div>
-                <div class="space-y-10 flex-1">
+                <div class="space-y-10 space flex-1 text-end">
 
-                      <div class="flex gap-4 items-center text-end">
+                      <div class="flex gap-4 items-center ">
                             <div class="">
-                                  <h1 class="text-xl font-extrabold ">Integrated Supplier</h1>
-                                  <hr class=" ml-[284px] w-[100px]">
+                                  <h1 class="text-xl font-extrabold">Integrated Supplier</h1>
+                                  <hr class="ml-0 2xl:ml-[380px] w-[100px]">
                                   <p>Professional employees are there for you to pick <br> the most
                                         amazing and fresh fruits.</p>
                             </div>
-                            <div>
+                            <div class=" 2xl:flex">
                                   <img class="bg-[#e7e7e7] p-2 rounded-full"
                                         src="./icone//gift-box 1.png 1.png 1.png" alt="">
                             </div>
                       </div>
-                      <div class="flex gap-4 items-center text-end">
+                      <div class="flex gap-4 items-center">
                             <div class="">
                                   <h1 class="text-xl font-extrabold ">Sustainable Practice</h1>
-                                  <hr class=" ml-[284px] w-[100px]">
+                                  <hr class="ml-0 2xl:ml-[380px]  w-[100px]">
                                   <p>Professional employees are there for you to pick <br> the most
                                         amazing and fresh fruits.</p>
                             </div>
-                            <div>
+                            <div class=" 2xl:flex">
                                   <img class="bg-[#e7e7e7] p-2 rounded-full"
                                         src="./icone//ice-cream 1.png 1.png 1.png" alt="">
                             </div>
                       </div>
-                      <div class="flex gap-4 items-center text-end">
+                      <div class="flex gap-4 items-center">
                             <div class="">
                                   <h1 class="text-xl font-extrabold ">The Benefits Only</h1>
-                                  <hr class=" ml-[284px] w-[100px]">
+                                  <hr class="ml-0 2xl:ml-[380px] w-[100px]">
                                   <p>Professional employees are there for you to pick <br> the most
                                         amazing and fresh fruits.</p>
                             </div>
-                            <div>
+                            <div class=" 2xl:flex">
                                   <img class="bg-[#e7e7e7] p-2 rounded-full"
                                         src="./icone//like 1.png 1.png" alt="">
                             </div>
@@ -622,15 +622,15 @@
                           <h1 class="text-2xl md:text-[35px] lg:text-[46px]">Fruit Lover</h1>
                     </div>
 
-                    <nav
-                          class="grid  lg:ml-[200px] 2xl:grid-cols-4 grid-cols-3 text-center justify-center items-center lg:grid-cols-8">
-                          <ul>Home</ul>
-                          <ul>About Us</ul>
-                          <ul>Shop</ul>
-                          <ul>All Fruits</ul>
-                          <ul>Support</ul>
-                          <ul>My Account</ul>
-                    </nav>
+                    <ul
+                          class="grid grid-cols-3 2xl:grid-cols-6">
+                          <li>Home</li>
+                          <li>About Us</li>
+                          <li>Shop</li>
+                          <li>All Fruits</li>
+                          <li>Support</li>
+                          <li>My Account</li>
+                    </ul>
                     <div class="gap-5 space-x-3 lg:space-x-10 mt-10 ">
                         <a href="https://twitter.com/arnob_sajedur"><i class="fa-brands fa-twitter hover:text-indigo-400 transition"></i></a>
                         <a href="https://www.facebook.com/sajedurock.arnoboss"><i class="fa-brands fa-facebook hover:text-indigo-400 transition"></i></a>
